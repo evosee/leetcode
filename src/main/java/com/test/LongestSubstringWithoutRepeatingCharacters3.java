@@ -10,7 +10,7 @@ import java.util.Set;
  * @version 1.0
  * @date 2019/6/24 18:39
  */
-public class LongestSubstringWithoutRepeatingCharacters {
+public class LongestSubstringWithoutRepeatingCharacters3 {
     public static void main(String[] args) {
         String s = "abcabcbbdef";
         System.out.println(lengthOfLongestSubstring3(s));

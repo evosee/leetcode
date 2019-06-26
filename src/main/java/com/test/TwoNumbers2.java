@@ -5,7 +5,7 @@ package com.test;
  * @version 1.0
  * @date 2019/6/24 15:44
  */
-public class TwoNumbers {
+public class TwoNumbers2 {
 
     public static void main(String[] args) {
         ListNode listNode = new ListNode(5);
@@ -23,8 +23,8 @@ public class TwoNumbers {
      //   listNode4.next = listNode5;
      //   listNode5.next = listNode6;
 
-        TwoNumbers twoNumbers = new TwoNumbers();
-        ListNode node = twoNumbers.addTwoNumbers2(listNode,listNode4);
+        TwoNumbers2 twoNumbers2 = new TwoNumbers2();
+        ListNode node = twoNumbers2.addTwoNumbers2(listNode,listNode4);
         do {
             int x = node.val;
             node = node.next;

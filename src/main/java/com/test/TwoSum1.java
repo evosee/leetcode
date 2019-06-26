@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * 两数之和
  */
-public class TwoSum {
+public class TwoSum1 {
     public static void main(String[] args) {
         int[] a = {2, 7, 11, 15};
 
