@@ -1,4 +1,4 @@
-package com.test;
+package com.test.algorithm;
 
 import java.util.HashMap;
 import java.util.HashSet;
