@@ -29,6 +29,6 @@ public class RemoveDuplicatesFromSortedArray26 {
                 nums[++j] =nums[i];
             }
         }
-        return j;
+        return j+1;
     }
 }
