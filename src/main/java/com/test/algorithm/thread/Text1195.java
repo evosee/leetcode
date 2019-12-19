@@ -96,14 +96,7 @@ public class Text1195 {
         fizz.release(1);
 
     }
-    private void releaseAll(){
-        if(atomicInteger.get()>n){
-            fizz.release(1);
-            buzz.release(1);
-            fizzbuzz.release(1);
-            number.release(1);
-        }
-    }
+
 
     public static void main(String[] args) {
         Text1195 text1195 = new Text1195(15);
