@@ -13,7 +13,6 @@ public class Text1115 {
 
     private volatile boolean first = true;
     private volatile boolean second;
-    private Object lock = new Object();
     private Lock reenLock = new ReentrantLock();
     private Condition condition = reenLock.newCondition();
     private int n;
@@ -25,19 +24,7 @@ public class Text1115 {
     public void foo(Runnable printFoo) throws Exception {
 
         for (int i = 0; i < n; i++) {
-            /*synchronized (lock) {
-                if (first) {
-                    printFoo.run();
-                    first = false;
-                    second = true;
-                    lock.notifyAll();
-                } else {
-                    lock.wait();
-                    printFoo.run();
-                    first = false;
-                    second = true;
-                }
-            }*/
+
             try {
                 reenLock.lock();
                 if (first) {
